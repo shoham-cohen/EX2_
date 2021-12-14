@@ -73,6 +73,35 @@ at the end the node with the smallest chosen value is the center node.
 * save: saves the graph to a new json file.
 * load: load a new graph from a json file.
 
+## RESULTS
+
+### 1,000Nodes
+* shortestPath: 31 ms
+* center: 1 sec 626 ms
+* tsp: 32
+* load: 62 ms
+* save: 94 ms
+* isConnected: 312 ms
+* shortestPathDist: 16 ms
+
+### 10,000Nodes
+* shortestPath: 359 ms
+* center: 15 min 30 seconds
+* tsp: 484 ms
+* load: 364 ms
+* save: 656 ms
+* isConnected: 15 sec 570 ms
+* shortestPathDist: 282 ms
+
+### 100,000Nodes
+* shortestPath: 47 sec 88 ms
+* center: timeout
+* tsp: 1 min 4 sec
+* load: 6 sec 428 ms
+* save: heap space error
+* isConnected: timeout
+* shortestPathDist: 42 sec 472 ms
+
 ## NOTE
 
 to run the jar file write in the command line: java -jar Graph_Ex2.jar filename.json
